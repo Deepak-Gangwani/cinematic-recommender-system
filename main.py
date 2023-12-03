@@ -9,6 +9,21 @@ import pandas as pd
 import requests
 
 
+# create an default wide mode feature
+st.set_page_config(layout="wide")
+
+# Custom CSS to hide the Streamlit footer
+custom_css = """
+    <style>
+        .viewerBadge_container__1QSob {
+            display: none;
+        }
+    </style>
+"""
+
+# Display the custom CSS
+st.markdown(custom_css, unsafe_allow_html=True)
+
 # creating an api fetch function to display the movie image and content
 # streamlit run main.py
 
