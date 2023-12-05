@@ -10,7 +10,7 @@ import requests
 
 
 # create an default wide mode feature
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Cinematic Recommender System", page_icon="🎥", layout="wide")
 
 # Custom CSS to hide the Streamlit footer
 custom_css = """
@@ -85,7 +85,7 @@ movies=pd.DataFrame(movies_dict)
 similarity=pickle.load(open("similarity.pkl","rb"))
 
 
-st.title("Movie Recommender System")
+st.title("Cinematic Recommender System 🎥")
 
 selected_movie_name = st.selectbox(
     'Please type or select your movie preference?',
